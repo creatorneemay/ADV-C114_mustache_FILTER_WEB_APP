@@ -14,7 +14,7 @@ function setup(){
 }
 function draw(){
     image(video,0,0,500,500)
-    image(moustache,lipx-40,lipy+10,80,40);
+    image(moustache,lipx-50,lipy+10,100,35);
 }
 function modelloaded(){
     console.log("posenet model is loaded")
@@ -26,7 +26,7 @@ function getposes(results){
         lipy=results[0].pose.nose.y
         console.log(lipx,lipy)
     }
-    function take_snapshot(){
-        save('NeemayIsTheGreatest.jpg')
-    }
+}
+function take_snapshot(){
+    save('NeemayIsTheGreatest.jpg')
 }
